@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <script src="/bower_components/angular/angular.min.js"></script>
+    <script src = "/socket.io/socket.io.js"> </script>
     <script src="/cntroller.js"></script>
+
+
 </head>
+
 <body>
 
 <div ng-app="myApp">
-    <div ng-controller="controller">
-
-        <img style="width:20%;height: 30%;" ng-src={{imgUrl}}>
+    <div ng-controller="controller"  class = "imageContainer">
+        <img style="width: 93%;
+    height: 168%;" ng-src={{imgUrl}}>
         </br>
         <input type="file" multiple name="file" onchange="angular.element(this).scope().fileNameChanged(this.files)"/>
         </br>
